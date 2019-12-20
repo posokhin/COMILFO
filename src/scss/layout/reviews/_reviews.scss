@@ -1,0 +1,87 @@
+.reviews{
+    padding: 64px 0 80px;
+    @include media(768){
+        padding: 32px 0;
+    }
+    .title{
+        margin-bottom: 80px;
+        @include media(768){
+            margin-bottom: 24px;
+        }
+    }
+    &__top{
+        background: #181F33;
+        padding: 72px 0 110px;
+        position: relative;
+        @include media(768){
+            padding: 48px 24px 72px;
+        }  
+    }
+    &__slider{
+        max-width: 546px;
+        margin: 0 auto;
+        &-pag{
+            @include media(768){
+                display: none;
+            }
+            &-item{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+                &.swiper-button-disabled{
+                    pointer-events: none;
+                    i{
+                        opacity: 0.5;
+                    }   
+                }
+                i{
+                    transition: .3s;
+                }
+                &--prev{
+                    left: 8%;
+                    i{
+                        transform: rotate(180deg);
+                    }
+                }
+                &--next{
+                    right: 8%;
+                }
+                &:hover{
+                    i{
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+        &-nav{
+            position: absolute;
+            bottom: 56px;
+            left: 50%;
+            transform: translateX(-50%);
+            @include media(768){
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                bottom: 32px;
+                span{
+                    width: 16px;
+                }
+            }
+            span{
+                background: #ffffff;
+                opacity: 0.5;
+                width: 26px;
+                height: 4px;
+                border-radius: 0;
+                margin-right: 8px;
+                &:last-child{
+                    margin-right: 0;
+                }
+                &.swiper-pagination-bullet-active{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

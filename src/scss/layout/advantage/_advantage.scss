@@ -1,0 +1,53 @@
+.advantage{
+    transform: translateY(-130px);
+    margin-bottom: -130px;
+    &__row{
+        margin: 0 -16px;
+        @include media(1100){
+            margin: 0;
+        }
+    }
+    &__col{
+        padding: 0 16px;
+        @include col(4);
+        @include media(1100){
+            width: 100%;
+            padding: 0;
+            margin-bottom: 24px;
+        }
+    }
+    &__card{
+        border: 16px solid #181F33;
+        padding: 32px 24px;
+        height: 100%;
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.151579);
+    }
+    &__title{
+        padding-bottom: 16px;
+        margin: 16px 0;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: Merriweather;
+        color: #181F33;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #C09563;
+            width: 50px;
+            height: 1px;
+        }
+    }
+    &__desc{
+        font-size: 14px;
+        line-height: 19px;
+        color: #233A64;      
+    }
+}

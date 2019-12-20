@@ -1,0 +1,44 @@
+.btn{
+    font-family: "Open Sans";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    transition: .3s;
+    padding: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.40625px;
+
+    &--icon{
+        &-left{
+            i{
+                margin-right: 8px;
+            }
+        }
+        &-right{
+            i{
+                margin-left: 8px; 
+            }
+        }
+    }
+
+    &--gold{
+        background: #C09563;
+        color: #FFFFFF;
+        &:hover{
+            background: lighten(#C09563, 5);
+        }
+    }
+    &--dark{
+        background: #181F33;
+        color: white;
+        &:hover{
+            background: lighten(#181F33, 5);
+        }
+    }
+}

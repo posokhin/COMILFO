@@ -1,0 +1,100 @@
+.form{
+    &__title{
+        font-family: Merriweather;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #181F33;     
+        text-align: center;
+        margin-bottom: 16px;
+        @include media(500){
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 8px;
+        }
+    }
+    &__desc{
+        font-family: Montserrat;
+        line-height: 23px;
+        text-align: center;
+        color: #444444;    
+        margin-bottom: 16px;   
+    }
+    &__row{
+        margin: 0 -16px;
+        @include media(768){
+            margin: 0;
+        }
+    }
+    &__col{
+        width: 33.33%;
+        padding: 0 16px;
+        @include media(768){
+            width: 100%;
+            padding: 0;
+            margin-bottom: 16px;
+        }
+    }
+    &__field{
+        background: #FFFFFF;
+        border: 1px solid #979797;
+        box-sizing: border-box;    
+        position: relative;   
+        input{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding-left: 16px;
+            color: #000000;
+            &::placeholder{
+                color: #999999;
+            }
+        }
+        textarea{
+            min-height: 120px;
+            width: 100%;
+            border: 0;
+            resize: none;
+            padding: 16px;
+        }
+        &.error{
+            .form__field-error{
+                display: block;
+            }
+        }
+        &-error{
+            display: none;
+            font-size: 10px;
+            line-height: 12px;
+            color: #D0021B;      
+            position: absolute;
+            left: 0;
+            bottom: -14px;
+        }
+    }
+    &__icon{
+        padding: 12px 14px;
+        border-right: 1px solid #979797;
+        @include media(500){
+            padding: 8px;
+        }
+    }
+    button{
+        height: 48px;
+        padding: 0 32px;
+    }
+    &__privacy{
+        p{
+            font-size: 10px;
+            line-height: 15px;
+            letter-spacing: 0.57px;
+            color: #CFCFCF;      
+            a{
+                color: #CFCFCF;      
+                text-decoration: underline;
+            }
+        }
+    }
+}

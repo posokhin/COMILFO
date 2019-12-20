@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+html(lang="ru-RU")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title COMILFO
+        link(rel="stylesheet", href="style.css")
+    body
+        .wrapper
+            section.top
+                header.header
+                    .container
+                        .header__row.flex-wrap.aic
+                            .header__col.header__col--logo
+                                a(href="").logo 
+                                    img(src="img/logo.svg", alt="")
+                            .header__col.header__col--menu
+                                ul.menu.flex.aic
+                                    li.menu__item
+                                        a(href="#adv") наши преимущества
+                                    li.menu__item
+                                        a(href="#price") ТАРИФЫ
+                                    li.menu__item
+                                        a(href="#reg") ЭТАПЫ РЕГИСТРАЦИИ
+                                    li.menu__item
+                                        a(href="#rev") отзывы
+                                    li.menu__item
+                                        a(href="#contacts") контакты
+                            .header__col.header__col--mobile
+                                a(href="tel:+7 (812) 318-40-27")
+                                    i.i-phone--white
+                                .header__burger
+                                    span
+                            .header__call
+                                a(href="tel:+7 (812) 318-40-27") +7 (812) 318-40-27
+                                a(href="").btn.btn--gold.btn--icon.btn--icon-left
+                                    i.i-phone.i-phone--white
+                                    span заказать звонок
+                    .m-menu
+                        .m-menu-inner
+                            ul.m-menu__list
+                                li.m-menu__item
+                                    a(href="#reg") ЭТАПЫ РЕГИСТРАЦИИ
+                                li.m-menu__item
+                                    a(href="#price") ТАРИФЫ
+                                li.m-menu__item
+                                    a(href="#contacts") контакты
+                                li.m-menu__item
+                                    a(href="#rev") отзывы
+                                li.m-menu__item
+                                    a(href="#adv") наши преимущества
+                            .m-menu__call
+                                a(href="tel:+7 (812) 318-40-27") +7 (812) 318-40-27
+                                a(href="").btn.btn--gold заказать звонок
+                .top__info
+                    .container
+                        h1 Регистрационные услуги в Санкт-Петербурге
+                        p регистрация ООО (ИП)  под ключ без оплаты госпошлины и без похода в налоговую от 
+                            span 2 500 руб
+                        a(href="").btn.btn--gold.btn--icon.btn--icon-right
+                            span заказать услугу
+                            i.i-arrow.i-arrow--white
+            section.price
+                section.advantage#adv
+                    .container
+                        .advantage__row.flex-wrap
+                            .advantage__col
+                                .advantage__card
+                                    .advantage__icon
+                                        img(src="img/adv/1.svg", alt="")
+                                    .advantage__title бесплатная консультация
+                                    .advantage__desc Бесплатно консультируем Вас по всем юридическим и организационным вопросам при создании ООО/ИП
+                            .advantage__col
+                                .advantage__card
+                                    .advantage__icon
+                                        img(src="img/adv/2.svg", alt="")
+                                    .advantage__title подача документов онлайн
+                                    .advantage__desc Мы предоставляем возможность удаленной подачи документов
+                            .advantage__col
+                                .advantage__card
+                                    .advantage__icon
+                                        img(src="img/adv/3.svg", alt="")
+                                    .advantage__title Мы несем ответственность
+                                    .advantage__desc Наша профессиональная деятельность застрахована в соответствии с законодательством  РФ
+                .price__wrap
+                    .container
+                        .title
+                            h2 НАШИ ТАРИФЫ
+                            i.i-title
+                        .price__row.flex-wrap#price
+                            .price__col
+                                .price__card
+                                    .price__top
+                                        .price__title Подам Сам
+                                        .price__subtitle экономный
+                                    .price__middle
+                                        .price__cost 2 500 
+                                            span руб
+                                        ul
+                                            li • Подготовим необходимые документы;
+                                            li • Подробно проконсультируем;
+                                            li • Дадим инструкцию для самостоятельной подачи документов в налоговую;
+                                            li • Бесплатно откроем р/счет.
+                                    .price__bottom
+                                        span 2 посещения налоговой
+                                        a(href="" data-id="1").btn.btn--dark.js-open-popup подробнее
+                            .price__col
+                                .price__card
+                                    .price__top
+                                        .price__title стандартный
+                                        .price__subtitle без оплаты нотариальных услуг
+                                    .price__middle
+                                        .price__cost 4 000 
+                                            span руб
+                                        ul
+                                            li • Подготовим необходимые документы;
+                                            li • Подробно проконсультируем;
+                                            li • Лично получите документы в налоговой, дадим инструкцию;
+                                            li • Бесплатно откроем р/счет.
+                                    .price__bottom
+                                        span 1 посещения налоговой
+                                        a(href="" data-id="2").btn.btn--dark.js-open-popup подробнее
+                            .price__col
+                                .price__card
+                                    .price__top
+                                        .price__title оптимальный
+                                        .price__subtitle входит ЭЦП
+                                    .price__middle
+                                        .price__cost 6 000
+                                            span руб
+                                        ul
+                                            li • Подготовим необходимые документы;
+                                            li • Подробно проконсультируем;
+                                            li • Лично получите документы в налоговой, дадим инструкцию;
+                                            li • Бесплатно откроем р/счет.
+                                    .price__bottom
+                                        span 1 визит к нам в офис
+                                        a(href="" data-id="3").btn.btn--dark.js-open-popup подробнее
+                            .price__col
+                                .price__card
+                                    .price__top
+                                        .price__title все включено
+                                        .price__subtitle «под ключ»
+                                    .price__middle
+                                        .price__cost 10 000
+                                            span руб
+                                        ul
+                                            li • Подготовим необходимые документы;
+                                            li • Подробно проконсультируем;
+                                            li • Берём общение с налоговой на себя;
+                                            li • Получаете готовый пакет документов;
+                                            li • Ваш Бизнес готов к старту;
+                                            li • Бесплатно откроем р/счет и резервный р/с;
+                                            li • Изготовим печать - автомат;
+                                    .price__bottom
+                                        span 1 визит к нам в офис
+                                        a(href="" data-id="4").btn.btn--dark.js-open-popup подробнее
+            section.action
+                .container
+                    .action__title Получите 1 месяц бесплатного бух. обслуживания и сдачу необходимой отчетности
+                    .action__desc При заказе тарифа «Оптимальный» или «Все включено» Вы экономите 4 000 руб. на госпошлине, бесплатно получаете 1 месяц бухгалтерского обслуживания и сдачу отчетов требующихся при регистрации ООО.
+                    form(action="").form
+                        .form__row.flex-wrap
+                            .form__col
+                                .form__field.flex.aic
+                                    .form__icon
+                                        i.i-user
+                                    input(type="text" placeholder="Ваше имя")
+                                    .form__field-error Поле обязательно для заполнения
+                            .form__col
+                                .form__field.flex.aic
+                                    .form__icon
+                                        i.i-phone.i-phone--form
+                                    input(type="text" placeholder="Ваш телефон")
+                                    .form__field-error Поле обязательно для заполнения
+                            .form__col
+                                button(type="submit").btn.btn--gold.btn--icon.btn--icon-right
+                                    span ОТПРАВИТЬ
+                                    i.i-arrow--white
+                        .form__privacy
+                            p Нажимая кнопку «Отправить» вы соглашаетесь с 
+                                a(href="") политикой конфиденциальности
+            section.reg#reg
+                .container
+                    .title
+                        h2 этапы регистрации
+                        i.i-title
+                    ul.reg__list
+                        li.reg__item
+                            .reg__title.flex.aic.jcsb
+                                .reg__title-left.flex.aic
+                                    .reg__num 1
+                                    .reg__name Консультация
+                                .reg__button
+                                    i.i-arrow--down
+                            .reg__content
+                                p Ответим на важные вопросы:
+                                ul
+                                    li 	- какую форму собственности выбрать (ООО, ИП, АО)
+                                    li 	- подберем комфортную и наиболее выгодную систему налогообложения (УСН, ОСНО, ЕНВД, Патент)
+                                    li 	- выберем тот способ подачи документов на государственную регистрацию Вашей Организации, который подходит именно Вам
+                                    li 	- расскажем какой юридический адрес стоит выбрать для Бизнеса
+                        li.reg__item
+                            .reg__title.flex.aic.jcsb
+                                .reg__title-left.flex.aic
+                                    .reg__num 2
+                                    .reg__name Сбор данных 
+                                .reg__button
+                                    i.i-arrow--down
+                            .reg__content
+                                p (необходимая информация для регистрации Бизнеса)
+                                ul
+                                    li - направим Вам простую анкету 
+                                    li - запросим необходимые документы для регистрации Организации
+                        li.reg__item
+                            .reg__title.flex.aic.jcsb
+                                .reg__title-left.flex.aic
+                                    .reg__num 3
+                                    .reg__name Взаимодействие с МИФНС
+                                .reg__button
+                                    i.i-arrow--down
+                            .reg__content
+                                ul
+                                    li - подача готового пакета документов в ИФНС
+                                    li - через 5-9 дней (зависит от формы собственности) получение решения из налоговой о регистрации Организации
+                        li.reg__item
+                            .reg__title.flex.aic.jcsb
+                                .reg__title-left.flex.aic
+                                    .reg__num 4
+                                    .reg__name Печать
+                                .reg__button
+                                    i.i-arrow--down
+                            .reg__content
+                                ul
+                                    li менее чем за 48 часов подготовим макет-образец штампа и изготовим индивидуально подобранную печать для Вашей организации.
+                        li.reg__item
+                            .reg__title.flex.aic.jcsb
+                                .reg__title-left.flex.aic
+                                    .reg__num 5
+                                    .reg__name Открытие расчетного счета в Банке
+                                .reg__button
+                                    i.i-arrow--down
+                            .reg__content
+                                ul
+                                    li - легко и быстро откроем нужное Вам количество расчётных счётов в Банках-партнерах.
+                                    li - подберём выгодный тариф для старта работы
+                                    li - организуем встречу с представителем Банка у нас в офисе, в отделении Банка, у Вас в офисе - как удобно
+                        li.reg__item
+                            .reg__title.flex.aic.jcsb
+                                .reg__title-left.flex.aic
+                                    .reg__num 6
+                                    .reg__name Бухгалтерское обслуживание
+                                .reg__button
+                                    i.i-arrow--down
+                            .reg__content
+                                ul
+                                    li - на 100% заменим штатного бухгалтера, опыт работы более 15 лет
+                                    li - решаем любые задачи в режиме «онлайн», как будто у Вас в офисе
+                                    li - стоимость обслуживания от 7 500 руб. в мес.
+            section.reviews#rev
+                .container
+                    .title 
+                        h2 нам доверяют
+                        i.i-title
+                    .reviews__top
+                        .reviews__slider-pag
+                            .reviews__slider-pag-item.reviews__slider-pag-item--prev
+                                i.i-arrow-slider
+                            .reviews__slider-pag-item.reviews__slider-pag-item--next
+                                i.i-arrow-slider
+                        .reviews__slider-nav
+                        .reviews__slider.swiper-container   
+                            ul.reviews__list.swiper-wrapper
+                                -for(var i = 1; i < 10; i+=1)
+                                    li.reviews__item.swiper-slide
+                                        img(src="img/rev/"+i+".png", alt="")
+                    ul.companies.flex-wrap
+                        -for(var k = 1; k < 13; k+=1)
+                            li.companies__item
+                                a(href="")
+                                    img(src="img/com/"+k+".svg", alt="")
+            section.sale
+                .container
+                    .sale__row.flex-wrap.aic
+                        .sale__col.sale__col--form
+                            form(action="" method="").form
+                                .form__title оставить заявку
+                                .form__desc Заполните форму и мы свяжемся с вами в течение рабочего дня.
+                                .form__field.flex.aic
+                                    .form__icon
+                                        i.i-user
+                                    input(type="text" placeholder="Ваше имя")
+                                    .form__field-error Поле обязательно для заполнения
+                                .form__field.flex.aic
+                                    .form__icon
+                                        i.i-phone--form
+                                    input(type="text" placeholder="Ваш телефон")
+                                    .form__field-error Поле обязательно для заполнения
+                                button(type="submit").btn.btn--gold отправить
+                                .form__privacy 
+                                    p Нажимая кнопку «Отправить» вы соглашаетесь с 
+                                        a(href="") политикой конфиденциальности
+                        .sale__col.sale__col--info
+                            p Получите скидку 10%
+                            span Оставьте заявку прямо сейчас и получите скидку 10%, действует на все указанные тарифы. 
+            section.contacts#contacts
+                .container
+                    .title
+                        h2 наши контакты
+                        i.i-title
+                    .contacts__top.flex-wrap.aic.jcsb
+                        .contacts__item
+                            i.i-geo
+                            p г.Санкт - Петербург,<br>ул.Чапаева, 25
+                        .contacts__item
+                            i.i-mail
+                            a(href="mailto:reg@spbkomilfo.ru") reg@spbkomilfo.ru
+                        .contacts__item
+                            i.i-phone--gold
+                            a(href="tel:+7 (812) 318-40-27") +7 (812) 318-40-27
+                    .contacts__row.flex-wrap
+                        .contacts__col.contacts__col--map
+                            .map#map
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad917cbff0d80d893f175f8140e560d92e4d3979e5f58f90755bf5ca64c42c3a6&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+                        .contacts__col.contacts__col--form
+                            form(action="").form
+                                .form__title Остались вопросы? - Напишите нам!
+                                .form__field.flex.aic
+                                    .form__icon
+                                        i.i-user
+                                    input(type="text" placeholder="Ваше имя")
+                                    .form__field-error Поле обязательно для заполнения
+                                .form__field.flex.aic
+                                    .form__icon
+                                        i.i-phone.i-phone--form
+                                    input(type="text" placeholder="Ваш телефон")
+                                    .form__field-error Поле обязательно для заполнения
+                                .form__field.flex.aic
+                                    textarea(name="" placeholder="Комментарий")
+                                button(type="submit").btn.btn--gold отправить
+                                .form__privacy 
+                                    p Нажимая кнопку «Отправить» вы соглашаетесь с 
+                                        a(href="") политикой конфиденциальности
+        footer.footer   
+            .container
+                .footer__row.flex-wrap.aic
+                    .footer__left.flex.aic
+                        p Комильфо © 2019 | Все права защищены
+                        a(href="") Политика конфиденциальности
+                    a(href="").footer__dev.flex.aic
+                        span Сайт разработан:
+                        i.i-trinet
+        include blocks/popups
+        .overlay
+        include blocks/scripts

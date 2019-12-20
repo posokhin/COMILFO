@@ -1,0 +1,45 @@
+.top{
+    background: url("img/pic/Main_pic.png") no-repeat center/cover;
+    padding: 16px 0 220px;
+    @include media(768){
+        padding: 24px 0 170px;
+    }
+    &__info{
+        margin-top: 68px;
+        color: #FFFFFF;
+        @include media(768){
+            max-width: 500px;
+            margin-top: 32px;
+            h1{
+                font-size: 23px;
+                line-height: 38px;
+                letter-spacing: 0.8625px;            
+            }
+            p{
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 32px;
+            }
+        }
+        h1{
+            font-family: "Merriweather";
+            font-size: 48px;
+            line-height: 67px;
+            letter-spacing: 1.8px;
+            max-width: 710px;
+            margin-bottom: 16px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 32px;
+            max-width: 690px;
+            span{
+                font-weight: bold;
+            }
+            margin-bottom: 40px;
+        }
+        a{
+            max-width: 208px;
+        }
+    }
+}

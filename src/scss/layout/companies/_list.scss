@@ -1,0 +1,26 @@
+.companies{
+    margin: 0 -16px;
+    margin-top: 64px;
+    @include media(500){
+        margin: 0;
+    }
+    &__item{
+        padding: 0 16px;
+        width: 25%;
+        margin-bottom: 16px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        @include media(900){
+            width: 33.33%;
+        }
+        @include media(768){
+            width: 50%;
+        }
+        @include media(500){
+            width: 100%;
+            padding: 0;
+            text-align: center;
+        }
+    }
+}

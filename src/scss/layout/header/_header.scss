@@ -1,0 +1,103 @@
+.header{
+    position: relative;
+    transition: .5s;
+    &.active{
+        background: #171E31;    
+    }
+    &__burger{
+        margin-left: 24px;
+        width: 24px;
+        height: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        position: relative;
+        span{
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: #FFFFFF;
+            transition: .5s;
+            &::before,&::after{
+                content: "";
+                width: 100%;
+                height: 2px;
+                background: #FFFFFF;
+                position: absolute;
+                transition: .5s;
+            }
+            &::before{
+                top: 0;
+            }
+            &::after{
+                bottom: 0;
+            }
+        }
+        &.active{
+            span{
+                transform: rotate(-225deg);
+                &::before{
+                    transform: rotate(90deg);
+                }
+                &::after{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    &__row{
+        margin: 0 -16px;
+        position: relative;
+    }
+    &__col{
+        padding: 0 16px;
+        &--logo{
+            @include col(3);
+            @include media(1400){
+                max-width: 250px;
+                width: 100%;
+            }
+            @include media(768){
+                max-width: 150px;
+            }
+        }
+        &--menu{
+            @include col(9);
+            margin-left: auto;
+            @include media(1400){
+                display: none;
+            }
+        }
+        &--mobile{
+            display: none;
+            @include media(1400){
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+            }
+        }
+    }
+    &__call{
+        position: absolute;
+        top: 0;
+        right: -110px;
+        z-index: 1;
+        @include media(1400){
+            display: none;
+        }
+        a{
+            &:first-child{
+                font-weight: bold;
+                font-size: 19px;
+                line-height: 26px;
+                text-align: center;
+                letter-spacing: 0.59375px;
+                text-transform: uppercase;
+                color: #FFFFFF;       
+                margin-bottom: 4px;
+                display: block;
+            }
+        }
+    }
+}

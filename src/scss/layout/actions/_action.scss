@@ -1,0 +1,46 @@
+.action{
+    padding: 50px 0;
+    background: url("img/pic/bg_2.png") no-repeat center/cover;
+    @include media(768){
+        padding: 32px 0;
+    }
+    &__title{
+        font-family: Merriweather;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+        letter-spacing: 0.9375px;
+        color: #E7B274;
+        margin-bottom: 16px;  
+        @include media(768){
+            font-size: 18px;
+            line-height: 24px;
+        }  
+    }
+    &__desc{
+        font-size: 16px;
+        line-height: 29px;
+        font-family: "Open Sans";
+        text-align: center;
+        color: #FFFFFF;    
+        margin-bottom: 24px; 
+        @include media(768){
+            font-size: 14px;
+            line-height: 24px;
+        }  
+    }
+    .form__privacy {
+        max-width: 33.33%;
+        margin-left: auto;
+        padding: 0 20px;
+        @include media(768){
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+        }
+        p{
+            margin-top: 8px;
+        }
+    }
+}

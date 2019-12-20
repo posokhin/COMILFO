@@ -1,0 +1,87 @@
+.contacts{
+    background: url("img/pic/contacts.png") no-repeat center/cover;
+    padding: 64px 0 120px;
+    @include media(768){
+        padding: 32px 0;
+    }
+    &__top{
+        margin: 0 -16px 24px;
+        @include media(1000){
+            margin-bottom: 32px;
+        }
+        @include media(650){
+            margin: 0 0 24px;
+        }
+    }
+    &__item{
+        @include col(4);
+        padding: 0 16px;
+        text-align: center;
+        @include media(650){
+            width: 100%;
+            padding: 0;
+            margin-bottom: 16px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        i{
+            margin: 0 auto 16px;
+        }
+        p, a{
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: 0.321429px;
+            color: #060606;
+        }
+    }
+    &__row{
+        background: #FFFFFF;
+        box-shadow: 0px 20px 50px rgba(24, 31, 51, 0.1);       
+    }
+    &__col{
+        width: 50%;
+        @include media(1000){
+            width: 100%;
+            padding: 0;
+        }
+        &--form{
+            padding: 56px 80px;
+            form{
+                .form__title{
+                    margin-bottom: 16px;
+                }
+                .form__field, button{
+                    margin-bottom: 24px;
+                    width: 100%;
+                    @include media(500){
+                        margin-bottom: 16px;
+                    }
+                }
+                .form__privacy p{
+                    text-align: center;
+                }
+            }
+            @include media(1000){
+                padding: 32px;
+            }
+            @include media(500){
+                padding: 24px;
+            }
+        }
+    }
+}
+.map{
+    height: 100%;
+    @include media(1000){
+        height: 400px;
+    }
+    @include media(500){
+        height: 250px;
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}

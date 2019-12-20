@@ -1,0 +1,21 @@
+.footer{
+    background: #181F33;
+    padding: 45px 0;
+    color: white;
+    a{
+        color: white;
+    }
+    &__left{
+        a{
+            color: white;
+            text-decoration: underline;
+            margin-left: 60px;
+        }
+    }
+    &__dev{
+        margin-left: auto;
+        span{
+            margin-right: 16px;
+        }
+    }
+}

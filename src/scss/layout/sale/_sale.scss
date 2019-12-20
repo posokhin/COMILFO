@@ -1,0 +1,76 @@
+.sale{
+    padding: 48px 0;
+    background: url("img/pic/bg_3.png") no-repeat center/cover;
+    @include media(768){
+        padding: 32px 0;
+    }
+    &__row{
+        margin: 0 -16px;
+        @include media(800){
+            margin: 0;
+        }
+    }
+    &__col{
+        padding: 0 16px;
+        @include col(5);
+        @include media(1000){
+            width: 50%;
+        }
+        @include media(800){
+            width: 100%;
+            padding: 0;
+        }
+        &--info{
+            margin-left: auto;
+            color: white;
+            @include media(800){
+                order: -1;
+                margin-bottom: 24px;
+            }
+            p{
+                font-family: Merriweather;
+                font-weight: bold;
+                font-size: 48px;
+                line-height: 60px;
+                letter-spacing: 2.1px;    
+                margin-bottom: 24px;    
+                @include media(800){
+                    font-size: 24px;
+                    line-height: 24px;
+                    margin-bottom: 16px;
+                }
+            }
+            span{
+                font-size: 18px;
+                line-height: 24px;
+                letter-spacing: 0.3px;
+                @include media(800){
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    form{
+        background: #ffffff;
+        padding: 48px;
+        @include media(500){
+            padding: 24px;
+        }
+        .form__field,button{
+            margin-bottom: 24px;
+            @include media(500){
+                margin-bottom: 16px;
+            }
+        }
+        button{
+            width: 100%;
+        }
+        .form__privacy p{
+            text-align: center;
+            color: #7F7F7F;
+            a{
+                color: #7F7F7F;
+            }
+        }
+    }
+}

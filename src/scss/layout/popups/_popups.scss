@@ -1,0 +1,186 @@
+.popup{
+    max-width: 940px;
+    margin: auto;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    &__wrap{
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        overflow: auto;
+        padding: 50px 0;
+        @include media(950){
+            padding: 0;
+        }
+    }
+    @include media(950){
+        width: 100%;
+        height: 100%;
+    }
+    .close{
+        position: absolute;
+        top: 0;
+        right: -32px;
+        cursor: pointer;
+        @include media(1050){
+            top: 44px;
+            right: 40px;
+        }
+        @include media(500){
+            top: 28px;
+            right: 24px;
+        }
+        &--black{
+            display: none;
+            @include media(1050){
+                display: block;
+            }
+        }
+    }
+    &__head{
+        background: #F5F5F5;
+        padding: 40px;
+        @include media(500){
+            padding: 24px;
+        }
+    }
+    &__title{
+        font-family: Merriweather;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 24px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #181F33;    
+        @include media(500){
+            font-size: 18px;
+        }  
+    }
+    &__subtitle{
+        font-family: Merriweather;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.777778px;
+        color: #181F33;    
+        margin-bottom: 8px;  
+    }
+    &__content{
+        padding: 32px 40px 24px;
+        background: #FFFFFF;
+        @include media(500){
+            padding: 24px;
+        }
+    }
+    &__row{
+        margin: 0 -16px;
+        @include media(768){
+            margin: 0;
+        }
+    }
+    &__col{
+        width: 50%;
+        padding: 0 16px;
+        @include media(768){
+            width: 100%;
+            padding: 0;
+            margin-bottom: 16px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        @include media(430){
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+    &__bottom{
+        padding: 0 40px 40px;
+        background: #FFFFFF;
+        @include media(500){
+            padding: 0 24px 24px;
+        }
+        span{
+            font-size: 12px;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+            color: #C09563;   
+            font-family: Merriweather;     
+        }
+        p{
+            font-family: Merriweather;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 24px;
+            letter-spacing: 0.2px;
+            color: #181F33;
+            margin-top: 8px;
+            span{
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: #181F33;
+            }
+        }
+        a{
+            max-width: 180px;
+            width: 100%;
+            height: 42px;
+            @include media(768){
+                margin-top: 16px;
+            }
+        }
+    }
+    ul{
+        margin-bottom: 16px;
+        li{
+            font-size: 14px;
+            line-height: 22px;
+            color: #233A64;   
+            margin-bottom: 8px;
+            &:last-child{
+                margin-bottom: 0;
+            }      
+        }
+    }
+    &__form{
+        display: none;
+        background: #181F33;
+        padding: 16px;
+        form{
+            border: 1px solid #C09563;
+            padding: 24px;
+            .form__title{
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 31px;
+                text-align: center;
+                color: #FFFFFF;     
+                max-width: 436px;        
+                margin: 0 auto 24px;
+            }
+            button{
+                margin-top: 24px;
+                max-width: 200px;
+                width: 100%;
+            }
+        }      
+    }
+}
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    mix-blend-mode: normal;
+    opacity: 0.59;
+    z-index: 1;
+}
