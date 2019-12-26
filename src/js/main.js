@@ -3,11 +3,10 @@ var Swiper = require('../../node_modules/swiper/js/swiper.min.js');
 
 $(document).ready(function(){
 
-    $('.reg__title').on('click', function(){
-        $('.reg__content').stop(true).slideUp();
-        $(this).siblings('.reg__content').stop(true).slideDown();
-        $('.reg__button').removeClass('active');
-        $(this).find('.reg__button').toggleClass('active');
+    $('.reg__item').on('click', function(){
+        $(this).toggleClass('active');
+        $(this).siblings().removeClass('active').find('.reg__content').stop(true).slideUp();
+        $(this).find('.reg__content').stop(true).slideToggle();
     });
 
     var slider = new Swiper('.reviews__slider', {
@@ -70,4 +69,18 @@ $(document).ready(function(){
             scrollTop: target.offset().top - 100
         }, 1000);
     });
+
+    $('.js-privacy').on('click', function(e){
+        e.preventDefault();
+        $('.popup__privacy').fadeIn();
+        $('.overlay').fadeIn();
+        $('body').addClass('fix');
+    })
+
+    $('.js-call').on('click', function(e){
+        e.preventDefault();
+        $('.popup__call').fadeIn();
+        $('.overlay').fadeIn();
+        $('body').addClass('fix');
+    })
 });

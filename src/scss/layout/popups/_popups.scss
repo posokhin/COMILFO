@@ -171,6 +171,36 @@
             }
         }      
     }
+    &__privacy{
+        strong{
+            display: block;
+            margin-bottom: 16px;
+        }
+        p{
+            margin-bottom: 16px;
+            strong,a{
+                display: inline-block;
+                font-weight: bold;
+                color: black;
+                margin: 0;
+            }
+        }
+    }
+    &__call{
+        .popup{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            height: auto;
+            .close--black{
+                display: none;
+            }
+        }
+        .popup__form{
+            display: block !important;
+        }
+    }
 }
 .overlay{
     display: none;

@@ -14,7 +14,7 @@ html(lang="ru-RU")
                         .header__row.flex-wrap.aic
                             .header__col.header__col--logo
                                 a(href="").logo 
-                                    img(src="img/logo.svg", alt="")
+                                    img(src="img/logo.png", alt="")
                             .header__col.header__col--menu
                                 ul.menu.flex.aic
                                     li.menu__item
@@ -34,7 +34,7 @@ html(lang="ru-RU")
                                     span
                             .header__call
                                 a(href="tel:+7 (812) 318-40-27") +7 (812) 318-40-27
-                                a(href="").btn.btn--gold.btn--icon.btn--icon-left
+                                a(href="").btn.btn--gold.btn--icon.btn--icon-left.js-call
                                     i.i-phone.i-phone--white
                                     span заказать звонок
                     .m-menu
@@ -52,13 +52,13 @@ html(lang="ru-RU")
                                     a(href="#adv") наши преимущества
                             .m-menu__call
                                 a(href="tel:+7 (812) 318-40-27") +7 (812) 318-40-27
-                                a(href="").btn.btn--gold заказать звонок
+                                a(href="").btn.btn--gold.js-call заказать звонок
                 .top__info
                     .container
                         h1 Регистрационные услуги в Санкт-Петербурге
                         p регистрация ООО (ИП)  под ключ без оплаты госпошлины и без похода в налоговую от 
                             span 2 500 руб
-                        a(href="").btn.btn--gold.btn--icon.btn--icon-right
+                        a(href="#action").btn.btn--gold.btn--icon.btn--icon-right
                             span заказать услугу
                             i.i-arrow.i-arrow--white
             section.price
@@ -156,7 +156,7 @@ html(lang="ru-RU")
                                     .price__bottom
                                         span 1 визит к нам в офис
                                         a(href="" data-id="4").btn.btn--dark.js-open-popup подробнее
-            section.action
+            section.action#action
                 .container
                     .action__title Получите 1 месяц бесплатного бух. обслуживания и сдачу необходимой отчетности
                     .action__desc При заказе тарифа «Оптимальный» или «Все включено» Вы экономите 4 000 руб. на госпошлине, бесплатно получаете 1 месяц бухгалтерского обслуживания и сдачу отчетов требующихся при регистрации ООО.
@@ -180,7 +180,7 @@ html(lang="ru-RU")
                                     i.i-arrow--white
                         .form__privacy
                             p Нажимая кнопку «Отправить» вы соглашаетесь с 
-                                a(href="") политикой конфиденциальности
+                                a(href="").js-privacy политикой конфиденциальности
             section.reg#reg
                 .container
                     .title
@@ -279,7 +279,7 @@ html(lang="ru-RU")
                         -for(var k = 1; k < 13; k+=1)
                             li.companies__item
                                 a(href="")
-                                    img(src="img/com/"+k+".svg", alt="")
+                                    img(src="img/com/"+k+".png", alt="")
             section.sale
                 .container
                     .sale__row.flex-wrap.aic
@@ -300,7 +300,7 @@ html(lang="ru-RU")
                                 button(type="submit").btn.btn--gold отправить
                                 .form__privacy 
                                     p Нажимая кнопку «Отправить» вы соглашаетесь с 
-                                        a(href="") политикой конфиденциальности
+                                        a(href="").js-privacy политикой конфиденциальности
                         .sale__col.sale__col--info
                             p Получите скидку 10%
                             span Оставьте заявку прямо сейчас и получите скидку 10%, действует на все указанные тарифы. 
@@ -341,7 +341,7 @@ html(lang="ru-RU")
                                 button(type="submit").btn.btn--gold отправить
                                 .form__privacy 
                                     p Нажимая кнопку «Отправить» вы соглашаетесь с 
-                                        a(href="") политикой конфиденциальности
+                                        a(href="").js-privacy политикой конфиденциальности
         footer.footer   
             .container
                 .footer__row.flex-wrap.aic

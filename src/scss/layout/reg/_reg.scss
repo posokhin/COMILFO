@@ -12,8 +12,13 @@
         background: #FFFFFF;
         margin-bottom: 8px;
         &.active{
-            .reg__content{
+            /* .reg__content{
                 display: block;
+            } */
+            .reg__button{
+                i{
+                    transform: rotate(180deg);
+                }
             }
         }
     }
@@ -40,13 +45,6 @@
     &__name{
         @extend .reg__num;
         margin-left: 16px;
-    }
-    &__button{
-        &.active{
-            i{
-                transform: rotate(180deg);
-            }
-        }
     }
     &__content{
         display: none;
