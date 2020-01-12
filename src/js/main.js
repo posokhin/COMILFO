@@ -1,15 +1,14 @@
-var $ = require('../../node_modules/jquery/dist/jquery.min.js');
-var Swiper = require('../../node_modules/swiper/js/swiper.min.js');
+import $ from 'jquery';
+import Swiper from 'swiper';
 
 $(document).ready(function(){
-
     $('.reg__item').on('click', function(){
         $(this).toggleClass('active');
         $(this).siblings().removeClass('active').find('.reg__content').stop(true).slideUp();
         $(this).find('.reg__content').stop(true).slideToggle();
     });
 
-    var slider = new Swiper('.reviews__slider', {
+    let slider = new Swiper('.reviews__slider', {
         slidesPerView: 1,
         slidesPerGroup: 1,
         speed: 700,
@@ -42,7 +41,7 @@ $(document).ready(function(){
 
     $('.js-open-popup').on('click', function(e){
         e.preventDefault();
-        var id = $(this).attr('data-id');
+        let id = $(this).attr('data-id');
         $('.popup__wrap#'+id).fadeIn();
         $('.overlay').fadeIn();
         $('body').addClass('fix');
@@ -64,7 +63,7 @@ $(document).ready(function(){
     $('a[href^="#"]').on('click', function(e){
         e.preventDefault();
         closeMenu();
-        var target = $(this.getAttribute('href'));
+        let target = $(this.getAttribute('href'));
         $('html,body').animate({
             scrollTop: target.offset().top - 100
         }, 1000);
